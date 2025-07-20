@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-16T14:35:52 IST" name="Suite" finished-at="2025-07-16T14:36:09 IST" duration-ms="16574">
+    <groups>
+    </groups>
+    <test started-at="2025-07-16T14:35:52 IST" name="Test" finished-at="2025-07-16T14:36:09 IST" duration-ms="16574">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:tests.LoginTest@3e92efc3]" started-at="2025-07-16T14:36:03 IST" name="openLoginPage" finished-at="2025-07-16T14:36:05 IST" duration-ms="1914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3e92efc3]" started-at="2025-07-16T14:36:05 IST" name="Login" data-provider="logindata" finished-at="2025-07-16T14:36:09 IST" duration-ms="4023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[luv2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Luv001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3e92efc3]" started-at="2025-07-16T14:36:09 IST" name="tearDown" finished-at="2025-07-16T14:36:09 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.TestFour">
+        <test-method signature="fourTest()[pri:0, instance:tests.TestFour@794cb805]" started-at="2025-07-16T14:35:52 IST" name="fourTest" finished-at="2025-07-16T14:35:52 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fourTest -->
+      </class> <!-- tests.TestFour -->
+      <class name="tests.RegisterTest">
+        <test-method is-config="true" signature="openRegpage()[pri:0, instance:tests.RegisterTest@5cee5251]" started-at="2025-07-16T14:35:52 IST" name="openRegpage" finished-at="2025-07-16T14:35:56 IST" duration-ms="3900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRegpage -->
+        <test-method signature="Register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegisterTest@5cee5251]" started-at="2025-07-16T14:35:56 IST" name="Register" data-provider="registerdata" finished-at="2025-07-16T14:36:03 IST" duration-ms="6424" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Akash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[akash123@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8987656545]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Akash123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Akash123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<Register Account> but was:<Your Account Has Been Created!>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<Register Account> but was:<Your Account Has Been Created!>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at tests.RegisterTest.Register(RegisterTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterTest@5cee5251]" started-at="2025-07-16T14:36:03 IST" name="tearDown" finished-at="2025-07-16T14:36:03 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegisterTest -->
+      <class name="tests.TestThree">
+        <test-method signature="threeTest()[pri:0, instance:tests.TestThree@1622f1b]" started-at="2025-07-16T14:36:09 IST" name="threeTest" finished-at="2025-07-16T14:36:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- threeTest -->
+      </class> <!-- tests.TestThree -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
