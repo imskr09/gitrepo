@@ -20,6 +20,8 @@ public class TestFour extends Base{
 		driver = initlizeDriver();
 		driver.get("https://smartprogramming.in/core-java-free-course");
 		Thread.sleep(3000);
+
+		System.out.println("Sajan has changed the code");
 		
 		Assert.assertTrue(false, "Forcing failure to test screenshot");
 
